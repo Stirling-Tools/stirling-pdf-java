@@ -29,7 +29,7 @@ import org.openapis.openapi.utils.SpeakeasyHTTPClient;
  * when Spring Boot detects it on the classpath.
  */
 @AutoConfiguration
-@ConditionalOnClass(StirlingPdf.class)
+@ConditionalOnClass(Stirling.class)
 @EnableConfigurationProperties(OpenapiAutoConfigProperties.class)
 public class OpenapiAutoConfig {
 
@@ -153,12 +153,12 @@ public class OpenapiAutoConfig {
      * Creates the main SDK bean using the configured SDKConfiguration.
      *
      * @param sdkConfiguration the configured SDKConfiguration bean
-     * @return A configured StirlingPdf instance
+     * @return A configured Stirling instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public StirlingPdf stirlingPdf(SDKConfiguration sdkConfiguration) {
-        return new StirlingPdf(sdkConfiguration);
+    public Stirling stirling(SDKConfiguration sdkConfiguration) {
+        return new Stirling(sdkConfiguration);
     }
 
     /**
@@ -196,168 +196,168 @@ public class OpenapiAutoConfig {
     /**
      * Creates a Security sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured Security instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public Security security(StirlingPdf stirlingPdf) {
-        return stirlingPdf.security();
+    public Security security(Stirling stirling) {
+        return stirling.security();
     }
     /**
      * Creates a Pipeline sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured Pipeline instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public Pipeline pipeline(StirlingPdf stirlingPdf) {
-        return stirlingPdf.pipeline();
+    public Pipeline pipeline(Stirling stirling) {
+        return stirling.pipeline();
     }
     /**
      * Creates a Misc sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured Misc instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public Misc misc(StirlingPdf stirlingPdf) {
-        return stirlingPdf.misc();
+    public Misc misc(Stirling stirling) {
+        return stirling.misc();
     }
     /**
      * Creates a General sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured General instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public General general(StirlingPdf stirlingPdf) {
-        return stirlingPdf.general();
+    public General general(Stirling stirling) {
+        return stirling.general();
     }
     /**
      * Creates a Filter sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured Filter instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public Filter filter(StirlingPdf stirlingPdf) {
-        return stirlingPdf.filter();
+    public Filter filter(Stirling stirling) {
+        return stirling.filter();
     }
     /**
      * Creates a Convert sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured Convert instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public Convert convert(StirlingPdf stirlingPdf) {
-        return stirlingPdf.convert();
+    public Convert convert(Stirling stirling) {
+        return stirling.convert();
     }
     /**
      * Creates a Analysis sub-SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @return A configured Analysis instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public Analysis analysis(StirlingPdf stirlingPdf) {
-        return stirlingPdf.analysis();
+    public Analysis analysis(Stirling stirling) {
+        return stirling.analysis();
     }
 
     /**
      * Creates the async SDK bean if none exists.
      *
-     * @param stirlingPdf the main SDK instance
+     * @param stirling the main SDK instance
      * @param sdkConfiguration the configured SDKConfiguration bean
-     * @return A configured AsyncStirlingPdf instance
+     * @return A configured AsyncStirling instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncStirlingPdf asyncStirlingPdf(StirlingPdf stirlingPdf, SDKConfiguration sdkConfiguration) {
-        return new AsyncStirlingPdf(stirlingPdf, sdkConfiguration);
+    public AsyncStirling asyncStirling(Stirling stirling, SDKConfiguration sdkConfiguration) {
+        return new AsyncStirling(stirling, sdkConfiguration);
     }
     /**
      * Creates an AsyncSecurity sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncSecurity instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncSecurity asyncSecurity(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.security();
+    public AsyncSecurity asyncSecurity(AsyncStirling asyncStirling) {
+        return asyncStirling.security();
     }
     /**
      * Creates an AsyncPipeline sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncPipeline instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncPipeline asyncPipeline(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.pipeline();
+    public AsyncPipeline asyncPipeline(AsyncStirling asyncStirling) {
+        return asyncStirling.pipeline();
     }
     /**
      * Creates an AsyncMisc sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncMisc instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncMisc asyncMisc(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.misc();
+    public AsyncMisc asyncMisc(AsyncStirling asyncStirling) {
+        return asyncStirling.misc();
     }
     /**
      * Creates an AsyncGeneral sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncGeneral instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncGeneral asyncGeneral(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.general();
+    public AsyncGeneral asyncGeneral(AsyncStirling asyncStirling) {
+        return asyncStirling.general();
     }
     /**
      * Creates an AsyncFilter sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncFilter instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncFilter asyncFilter(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.filter();
+    public AsyncFilter asyncFilter(AsyncStirling asyncStirling) {
+        return asyncStirling.filter();
     }
     /**
      * Creates an AsyncConvert sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncConvert instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncConvert asyncConvert(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.convert();
+    public AsyncConvert asyncConvert(AsyncStirling asyncStirling) {
+        return asyncStirling.convert();
     }
     /**
      * Creates an AsyncAnalysis sub-SDK bean if none exists.
      *
-     * @param asyncStirlingPdf the async SDK instance
+     * @param asyncStirling the async SDK instance
      * @return A configured AsyncAnalysis instance
      */
     @Bean
     @ConditionalOnMissingBean
-    public AsyncAnalysis asyncAnalysis(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.analysis();
+    public AsyncAnalysis asyncAnalysis(AsyncStirling asyncStirling) {
+        return asyncStirling.analysis();
     }
 }

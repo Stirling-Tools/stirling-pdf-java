@@ -54,7 +54,7 @@ This endpoint fetches content from a URL and converts it to a PDF format. Input:
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.UrlToPdfResponse;
 
@@ -62,7 +62,7 @@ public class Application {
 
     public static void main(String[] args) throws UrlToPdfBadRequestException, UrlToPdfRequestEntityTooLargeException, UrlToPdfUnprocessableEntityException, UrlToPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         UrlToPdfResponse res = sdk.convert().urlToPdf()
@@ -106,7 +106,7 @@ This endpoint converts a PDF file to an XML file. Input:PDF Output:XML Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ProcessPdfToXMLResponse;
@@ -115,7 +115,7 @@ public class Application {
 
     public static void main(String[] args) throws ProcessPdfToXMLBadRequestException, ProcessPdfToXMLRequestEntityTooLargeException, ProcessPdfToXMLUnprocessableEntityException, ProcessPdfToXMLInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -161,7 +161,7 @@ This endpoint converts a given PDF file to a Word document format. Input:PDF Out
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PdfToWordRequest;
 import org.openapis.openapi.models.components.PdfToWordRequestOutputFormat;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -171,7 +171,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PdfToWordRequest req = PdfToWordRequest.builder()
@@ -216,7 +216,7 @@ This endpoint converts a given PDF file to Text or RTF format. Input:PDF Output:
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PdfToTextOrRTFRequest;
 import org.openapis.openapi.models.components.PdfToTextOrRTFRequestOutputFormat;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -226,7 +226,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PdfToTextOrRTFRequest req = PdfToTextOrRTFRequest.builder()
@@ -271,7 +271,7 @@ This endpoint converts a given PDF file to a Presentation format. Input:PDF Outp
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PdfToPresentationRequest;
 import org.openapis.openapi.models.components.PdfToPresentationRequestOutputFormat;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -281,7 +281,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PdfToPresentationRequest req = PdfToPresentationRequest.builder()
@@ -326,7 +326,7 @@ This endpoint converts a PDF file to a PDF/A file using LibreOffice. PDF/A is a 
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PdfToPdfARequest;
 import org.openapis.openapi.models.components.PdfToPdfARequestOutputFormat;
 import org.openapis.openapi.models.errors.*;
@@ -336,7 +336,7 @@ public class Application {
 
     public static void main(String[] args) throws PdfToPdfABadRequestException, PdfToPdfARequestEntityTooLargeException, PdfToPdfAUnprocessableEntityException, PdfToPdfAInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PdfToPdfARequest req = PdfToPdfARequest.builder()
@@ -383,7 +383,7 @@ This endpoint converts a PDF file to Markdown format. Input:PDF Output:Markdown 
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ProcessPdfToMarkdownResponse;
@@ -392,7 +392,7 @@ public class Application {
 
     public static void main(String[] args) throws ProcessPdfToMarkdownBadRequestException, ProcessPdfToMarkdownRequestEntityTooLargeException, ProcessPdfToMarkdownUnprocessableEntityException, ProcessPdfToMarkdownInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -438,7 +438,7 @@ This endpoint converts a PDF file to image(s) with the specified image format, c
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.ConvertToImageRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ConvertToImageResponse;
@@ -447,7 +447,7 @@ public class Application {
 
     public static void main(String[] args) throws ConvertToImageBadRequestException, ConvertToImageRequestEntityTooLargeException, ConvertToImageUnprocessableEntityException, ConvertToImageInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ConvertToImageRequest req = ConvertToImageRequest.builder()
@@ -493,7 +493,7 @@ This endpoint converts a PDF file to HTML format. Input:PDF Output:HTML Type:SIS
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ProcessPdfToHTMLResponse;
@@ -502,7 +502,7 @@ public class Application {
 
     public static void main(String[] args) throws ProcessPdfToHTMLBadRequestException, ProcessPdfToHTMLRequestEntityTooLargeException, ProcessPdfToHTMLUnprocessableEntityException, ProcessPdfToHTMLInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -548,7 +548,7 @@ This operation takes an input PDF file and returns CSV file of whole page. Input
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFWithPageNums;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.PdfToCsvResponse;
@@ -557,7 +557,7 @@ public class Application {
 
     public static void main(String[] args) throws PdfToCsvBadRequestException, PdfToCsvRequestEntityTooLargeException, PdfToCsvUnprocessableEntityException, PdfToCsvInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFWithPageNums req = PDFWithPageNums.builder()
@@ -603,7 +603,7 @@ This endpoint takes a Markdown file input, converts it to HTML, and then to PDF 
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.MarkdownToPdfResponse;
 
@@ -611,7 +611,7 @@ public class Application {
 
     public static void main(String[] args) throws MarkdownToPdfBadRequestException, MarkdownToPdfRequestEntityTooLargeException, MarkdownToPdfUnprocessableEntityException, MarkdownToPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         MarkdownToPdfResponse res = sdk.convert().markdownToPdf()
@@ -652,7 +652,7 @@ This endpoint converts one or more images to a PDF file. Users can specify wheth
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ConvertToPdfResponse;
 
@@ -660,7 +660,7 @@ public class Application {
 
     public static void main(String[] args) throws ConvertToPdfBadRequestException, ConvertToPdfRequestEntityTooLargeException, ConvertToPdfUnprocessableEntityException, ConvertToPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ConvertToPdfResponse res = sdk.convert().convertToPdf()
@@ -701,7 +701,7 @@ This endpoint takes an HTML or ZIP file input and converts it to a PDF format. I
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.HTMLToPdfRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.HtmlToPdfResponse;
@@ -710,7 +710,7 @@ public class Application {
 
     public static void main(String[] args) throws HtmlToPdfBadRequestException, HtmlToPdfRequestEntityTooLargeException, HtmlToPdfUnprocessableEntityException, HtmlToPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         HTMLToPdfRequest req = HTMLToPdfRequest.builder()
@@ -756,7 +756,7 @@ This endpoint converts a given file to a PDF using LibreOffice API  Input:ANY Ou
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ProcessFileToPDFResponse;
 
@@ -764,7 +764,7 @@ public class Application {
 
     public static void main(String[] args) throws ProcessFileToPDFBadRequestException, ProcessFileToPDFRequestEntityTooLargeException, ProcessFileToPDFUnprocessableEntityException, ProcessFileToPDFInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ProcessFileToPDFResponse res = sdk.convert().processFileToPDF()
@@ -805,7 +805,7 @@ This endpoint converts EML (email) files to PDF format with extensive customizat
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.EmlToPdfRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ConvertEmlToPdfResponse;
@@ -814,7 +814,7 @@ public class Application {
 
     public static void main(String[] args) throws ConvertEmlToPdfBadRequestException, ConvertEmlToPdfRequestEntityTooLargeException, ConvertEmlToPdfUnprocessableEntityException, ConvertEmlToPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         EmlToPdfRequest req = EmlToPdfRequest.builder()

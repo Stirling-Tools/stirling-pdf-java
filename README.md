@@ -48,15 +48,15 @@ The samples below show how a published SDK artifact is used:
 
 Gradle:
 ```groovy
-implementation 'org.stirling:openapi:0.2.2'
+implementation 'com.stirling:openapi:0.2.3'
 ```
 
 Maven:
 ```xml
 <dependency>
-    <groupId>org.stirling</groupId>
+    <groupId>com.stirling</groupId>
     <artifactId>openapi</artifactId>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
 </dependency>
 ```
 
@@ -84,7 +84,7 @@ gradlew.bat publishToMavenLocal -Pskip.signing
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SignatureValidationRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ValidateSignatureResponse;
@@ -93,7 +93,7 @@ public class Application {
 
     public static void main(String[] args) throws ValidateSignatureBadRequestException, ValidateSignatureRequestEntityTooLargeException, ValidateSignatureUnprocessableEntityException, ValidateSignatureInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SignatureValidationRequest req = SignatureValidationRequest.builder()
@@ -113,8 +113,8 @@ An asynchronous SDK client is also available that returns a [`CompletableFuture<
 package hello.world;
 
 import java.util.concurrent.CompletableFuture;
-import org.openapis.openapi.AsyncStirlingPdf;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.AsyncStirling;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SignatureValidationRequest;
 import org.openapis.openapi.models.operations.async.ValidateSignatureResponse;
 
@@ -122,7 +122,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        AsyncStirlingPdf sdk = StirlingPdf.builder()
+        AsyncStirling sdk = Stirling.builder()
             .build()
             .async();
 
@@ -335,7 +335,7 @@ By default, an API error will throw a `models/errors/APIException` exception. Wh
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SignatureValidationRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ValidateSignatureResponse;
@@ -344,7 +344,7 @@ public class Application {
 
     public static void main(String[] args) throws ValidateSignatureBadRequestException, ValidateSignatureRequestEntityTooLargeException, ValidateSignatureUnprocessableEntityException, ValidateSignatureInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SignatureValidationRequest req = SignatureValidationRequest.builder()
@@ -370,7 +370,7 @@ The default server can be overridden globally using the `.serverURL(String serve
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SignatureValidationRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ValidateSignatureResponse;
@@ -379,7 +379,7 @@ public class Application {
 
     public static void main(String[] args) throws ValidateSignatureBadRequestException, ValidateSignatureRequestEntityTooLargeException, ValidateSignatureUnprocessableEntityException, ValidateSignatureInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
                 .serverURL("http://localhost:8080")
             .build();
 

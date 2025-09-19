@@ -16,7 +16,7 @@ import org.openapis.openapi.utils.Utils;
 /**
  * Stirling PDF - Processing API: API documentation for PDF processing operations including conversion, manipulation, security, and utilities.
  */
-public class StirlingPdf {
+public class Stirling {
     private static final Headers _headers = Headers.EMPTY;
 
 
@@ -373,7 +373,7 @@ public class StirlingPdf {
     }
 
     private SDKConfiguration sdkConfiguration;
-    private final AsyncStirlingPdf asyncSDK;
+    private final AsyncStirling asyncSDK;
 
     /**
      * The Builder class allows the configuration of a new instance of the SDK.
@@ -478,13 +478,13 @@ public class StirlingPdf {
          *
          * @return The SDK instance.
          */
-        public StirlingPdf build() {
+        public Stirling build() {
             if (serverUrl == null || serverUrl.isBlank()) {
                 serverUrl = SERVERS[0];
                 sdkConfiguration.setServerIdx(0);
             }
             sdkConfiguration.setServerUrl(serverUrl);
-            return new StirlingPdf(sdkConfiguration);
+            return new Stirling(sdkConfiguration);
         }
     }
 
@@ -497,7 +497,7 @@ public class StirlingPdf {
         return new Builder();
     }
 
-    public StirlingPdf(SDKConfiguration sdkConfiguration) {
+    public Stirling(SDKConfiguration sdkConfiguration) {
         this.sdkConfiguration = sdkConfiguration;
         this.sdkConfiguration.initialize();
         this.security = new Security(sdkConfiguration);
@@ -508,7 +508,7 @@ public class StirlingPdf {
         this.convert = new Convert(sdkConfiguration);
         this.analysis = new Analysis(sdkConfiguration);
         this.sdkConfiguration = this.sdkConfiguration.hooks().sdkInit(this.sdkConfiguration);
-        this.asyncSDK = new AsyncStirlingPdf(this, sdkConfiguration);
+        this.asyncSDK = new AsyncStirling(this, sdkConfiguration);
     }
 
     /**
@@ -516,7 +516,7 @@ public class StirlingPdf {
      * 
      * @return The async SDK
      */
-    public AsyncStirlingPdf async() {
+    public AsyncStirling async() {
         return asyncSDK;
     }
 

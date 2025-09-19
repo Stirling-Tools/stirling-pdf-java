@@ -41,7 +41,7 @@ package hello.world;
 
 import java.lang.Exception;
 import java.util.List;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.HandleDataRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.HandleDataResponse;
@@ -50,7 +50,7 @@ public class Application {
 
     public static void main(String[] args) throws HandleDataBadRequestException, HandleDataRequestEntityTooLargeException, HandleDataUnprocessableEntityException, HandleDataInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         HandleDataRequest req = HandleDataRequest.builder()

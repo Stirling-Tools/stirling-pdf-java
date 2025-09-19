@@ -45,7 +45,7 @@ Input:PDF Output:Boolean Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PageSizeRequest;
 import org.openapis.openapi.models.components.PageSizeRequestComparator;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -55,7 +55,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PageSizeRequest req = PageSizeRequest.builder()
@@ -100,7 +100,7 @@ Input:PDF Output:Boolean Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PageRotationRequest;
 import org.openapis.openapi.models.components.PageRotationRequestComparator;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -110,7 +110,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PageRotationRequest req = PageRotationRequest.builder()
@@ -155,7 +155,7 @@ Input:PDF Output:Boolean Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFComparisonAndCount;
 import org.openapis.openapi.models.components.PDFComparisonAndCountComparator;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -165,7 +165,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFComparisonAndCount req = PDFComparisonAndCount.builder()
@@ -210,7 +210,7 @@ Input:PDF Output:Boolean Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.FileSizeRequest;
 import org.openapis.openapi.models.components.FileSizeRequestComparator;
 import org.openapis.openapi.models.errors.ErrorResponse;
@@ -220,7 +220,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         FileSizeRequest req = FileSizeRequest.builder()
@@ -265,7 +265,7 @@ Input:PDF Output:Boolean Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.ContainsTextRequest;
 import org.openapis.openapi.models.errors.ErrorResponse;
 import org.openapis.openapi.models.operations.ContainsTextResponse;
@@ -274,7 +274,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ContainsTextRequest req = ContainsTextRequest.builder()
@@ -318,7 +318,7 @@ Input:PDF Output:Boolean Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFWithPageNums;
 import org.openapis.openapi.models.errors.ErrorResponse;
 import org.openapis.openapi.models.operations.ContainsImageResponse;
@@ -327,7 +327,7 @@ public class Application {
 
     public static void main(String[] args) throws ErrorResponse, ErrorResponse, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFWithPageNums req = PDFWithPageNums.builder()

@@ -47,7 +47,7 @@ Returns encryption and permission details. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetSecurityInfoResponse;
@@ -56,7 +56,7 @@ public class Application {
 
     public static void main(String[] args) throws GetSecurityInfoBadRequestException, GetSecurityInfoRequestEntityTooLargeException, GetSecurityInfoUnprocessableEntityException, GetSecurityInfoInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -102,7 +102,7 @@ Returns width and height of each page. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetPageDimensionsResponse;
@@ -111,7 +111,7 @@ public class Application {
 
     public static void main(String[] args) throws GetPageDimensionsBadRequestException, GetPageDimensionsRequestEntityTooLargeException, GetPageDimensionsUnprocessableEntityException, GetPageDimensionsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -157,7 +157,7 @@ Returns total number of pages in PDF. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetPageCountResponse;
@@ -166,7 +166,7 @@ public class Application {
 
     public static void main(String[] args) throws GetPageCountBadRequestException, GetPageCountRequestEntityTooLargeException, GetPageCountUnprocessableEntityException, GetPageCountInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -212,7 +212,7 @@ Returns count and details of form fields. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetFormFieldsResponse;
@@ -221,7 +221,7 @@ public class Application {
 
     public static void main(String[] args) throws GetFormFieldsBadRequestException, GetFormFieldsRequestEntityTooLargeException, GetFormFieldsUnprocessableEntityException, GetFormFieldsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -267,7 +267,7 @@ Returns list of fonts used in the document. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetFontInfoResponse;
@@ -276,7 +276,7 @@ public class Application {
 
     public static void main(String[] args) throws GetFontInfoBadRequestException, GetFontInfoRequestEntityTooLargeException, GetFontInfoUnprocessableEntityException, GetFontInfoInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -322,7 +322,7 @@ Returns title, author, subject, etc. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetDocumentPropertiesResponse;
@@ -331,7 +331,7 @@ public class Application {
 
     public static void main(String[] args) throws GetDocumentPropertiesBadRequestException, GetDocumentPropertiesRequestEntityTooLargeException, GetDocumentPropertiesUnprocessableEntityException, GetDocumentPropertiesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -377,7 +377,7 @@ Returns page count, version, file size. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetBasicInfoResponse;
@@ -386,7 +386,7 @@ public class Application {
 
     public static void main(String[] args) throws GetBasicInfoBadRequestException, GetBasicInfoRequestEntityTooLargeException, GetBasicInfoUnprocessableEntityException, GetBasicInfoInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -432,7 +432,7 @@ Returns count and types of annotations. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetAnnotationInfoResponse;
@@ -441,7 +441,7 @@ public class Application {
 
     public static void main(String[] args) throws GetAnnotationInfoBadRequestException, GetAnnotationInfoRequestEntityTooLargeException, GetAnnotationInfoUnprocessableEntityException, GetAnnotationInfoInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()

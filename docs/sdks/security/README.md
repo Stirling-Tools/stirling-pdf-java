@@ -49,7 +49,7 @@ Validates the digital signatures in a PDF file against default or custom certifi
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SignatureValidationRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ValidateSignatureResponse;
@@ -58,7 +58,7 @@ public class Application {
 
     public static void main(String[] args) throws ValidateSignatureBadRequestException, ValidateSignatureRequestEntityTooLargeException, ValidateSignatureUnprocessableEntityException, ValidateSignatureInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SignatureValidationRequest req = SignatureValidationRequest.builder()
@@ -104,7 +104,7 @@ This endpoint processes a PDF file and removes specific elements based on the pr
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SanitizePdfRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.SanitizePDFResponse;
@@ -113,7 +113,7 @@ public class Application {
 
     public static void main(String[] args) throws SanitizePDFBadRequestException, SanitizePDFRequestEntityTooLargeException, SanitizePDFUnprocessableEntityException, SanitizePDFInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SanitizePdfRequest req = SanitizePdfRequest.builder()
@@ -159,7 +159,7 @@ This endpoint removes the password from a protected PDF file. Users need to prov
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFPasswordRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RemovePasswordResponse;
@@ -168,7 +168,7 @@ public class Application {
 
     public static void main(String[] args) throws RemovePasswordBadRequestException, RemovePasswordRequestEntityTooLargeException, RemovePasswordUnprocessableEntityException, RemovePasswordInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFPasswordRequest req = PDFPasswordRequest.builder()
@@ -214,7 +214,7 @@ This endpoint accepts a PDF file and returns the PDF file without the digital si
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RemoveCertSignPDFResponse;
@@ -223,7 +223,7 @@ public class Application {
 
     public static void main(String[] args) throws RemoveCertSignPDFBadRequestException, RemoveCertSignPDFRequestEntityTooLargeException, RemoveCertSignPDFUnprocessableEntityException, RemoveCertSignPDFInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -270,7 +270,7 @@ package hello.world;
 
 import java.lang.Exception;
 import java.util.List;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.ManualRedactPdfRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RedactPdfManualResponse;
@@ -279,7 +279,7 @@ public class Application {
 
     public static void main(String[] args) throws RedactPdfManualBadRequestException, RedactPdfManualRequestEntityTooLargeException, RedactPdfManualUnprocessableEntityException, RedactPdfManualInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ManualRedactPdfRequest req = ManualRedactPdfRequest.builder()
@@ -326,7 +326,7 @@ desc. Input:PDF Output:JSON Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.GetPdfInfoResponse;
@@ -335,7 +335,7 @@ public class Application {
 
     public static void main(String[] args) throws GetPdfInfoBadRequestException, GetPdfInfoRequestEntityTooLargeException, GetPdfInfoUnprocessableEntityException, GetPdfInfoInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -381,7 +381,7 @@ This endpoint accepts a PDF file, a digital certificate and related information 
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.CertType;
 import org.openapis.openapi.models.components.SignPDFWithCertRequest;
 import org.openapis.openapi.models.errors.*;
@@ -391,7 +391,7 @@ public class Application {
 
     public static void main(String[] args) throws SignPDFWithCertBadRequestException, SignPDFWithCertRequestEntityTooLargeException, SignPDFWithCertUnprocessableEntityException, SignPDFWithCertInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SignPDFWithCertRequest req = SignPDFWithCertRequest.builder()
@@ -438,7 +438,7 @@ This operation takes an input PDF file and redacts the provided listOfText. Inpu
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.RedactPdfRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RedactPdfAutoResponse;
@@ -447,7 +447,7 @@ public class Application {
 
     public static void main(String[] args) throws RedactPdfAutoBadRequestException, RedactPdfAutoRequestEntityTooLargeException, RedactPdfAutoUnprocessableEntityException, RedactPdfAutoInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         RedactPdfRequest req = RedactPdfRequest.builder()
@@ -494,7 +494,7 @@ This endpoint adds a watermark to a given PDF file. Users can specify the waterm
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.AddWatermarkRequest;
 import org.openapis.openapi.models.components.WatermarkType;
 import org.openapis.openapi.models.errors.*;
@@ -504,7 +504,7 @@ public class Application {
 
     public static void main(String[] args) throws AddWatermarkBadRequestException, AddWatermarkRequestEntityTooLargeException, AddWatermarkUnprocessableEntityException, AddWatermarkInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         AddWatermarkRequest req = AddWatermarkRequest.builder()
@@ -551,7 +551,7 @@ This endpoint adds password protection to a PDF file. Users can specify a set of
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.AddPasswordRequest;
 import org.openapis.openapi.models.components.KeyLength;
 import org.openapis.openapi.models.errors.*;
@@ -561,7 +561,7 @@ public class Application {
 
     public static void main(String[] args) throws AddPasswordBadRequestException, AddPasswordRequestEntityTooLargeException, AddPasswordUnprocessableEntityException, AddPasswordInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         AddPasswordRequest req = AddPasswordRequest.builder()

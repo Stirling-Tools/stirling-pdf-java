@@ -1,4 +1,4 @@
-# StirlingPdf SDK
+# Stirling SDK
 
 ## Overview
 

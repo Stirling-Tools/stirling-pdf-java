@@ -11,9 +11,9 @@ targets:
     stirling-pdf:
         target: java
         source: Stirling PDF - Processing API
-        codeSamples:
-            registry:
-                location: registry.speakeasyapi.dev/stirling-pdf/stirling/stirling-pdf---processing-api-java-code-samples
-            labelOverride:
-                fixedValue: Java (SDK)
-            blocking: false
+        publish:
+            java:
+                ossrhUsername: $ossrh_username
+                ossrhPassword: $ossrh_password
+                gpgSecretKey: $java_gpg_secret_key
+                gpgPassPhrase: $java_gpg_passphrase

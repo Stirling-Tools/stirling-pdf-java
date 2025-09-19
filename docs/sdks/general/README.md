@@ -52,7 +52,7 @@ Split each page of a PDF into smaller sections based on the user's choice (halve
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SplitPdfBySectionsRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.SplitPdfResponse;
@@ -61,7 +61,7 @@ public class Application {
 
     public static void main(String[] args) throws SplitPdfBadRequestException, SplitPdfRequestEntityTooLargeException, SplitPdfUnprocessableEntityException, SplitPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SplitPdfBySectionsRequest req = SplitPdfBySectionsRequest.builder()
@@ -107,7 +107,7 @@ Splits a PDF into chapters and returns a ZIP file.
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SplitPdfByChaptersRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.SplitPdf1Response;
@@ -116,7 +116,7 @@ public class Application {
 
     public static void main(String[] args) throws SplitPdf1BadRequestException, SplitPdf1RequestEntityTooLargeException, SplitPdf1UnprocessableEntityException, SplitPdf1InternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SplitPdfByChaptersRequest req = SplitPdfByChaptersRequest.builder()
@@ -162,7 +162,7 @@ This endpoint splits a given PDF file into separate documents based on the speci
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFWithPageNums;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.SplitPdf2Response;
@@ -171,7 +171,7 @@ public class Application {
 
     public static void main(String[] args) throws SplitPdf2BadRequestException, SplitPdf2RequestEntityTooLargeException, SplitPdf2UnprocessableEntityException, SplitPdf2InternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFWithPageNums req = PDFWithPageNums.builder()
@@ -218,7 +218,7 @@ split PDF into multiple paged documents based on size/count, ie if 20 pages and 
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.SplitPdfBySizeOrCountRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.AutoSplitPdf1Response;
@@ -227,7 +227,7 @@ public class Application {
 
     public static void main(String[] args) throws AutoSplitPdf1BadRequestException, AutoSplitPdf1RequestEntityTooLargeException, AutoSplitPdf1UnprocessableEntityException, AutoSplitPdf1InternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         SplitPdfBySizeOrCountRequest req = SplitPdfBySizeOrCountRequest.builder()
@@ -273,7 +273,7 @@ This operation takes an input PDF file and the size to scale the pages to in the
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PageSize;
 import org.openapis.openapi.models.components.ScalePagesRequest;
 import org.openapis.openapi.models.errors.*;
@@ -283,7 +283,7 @@ public class Application {
 
     public static void main(String[] args) throws ScalePagesBadRequestException, ScalePagesRequestEntityTooLargeException, ScalePagesUnprocessableEntityException, ScalePagesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ScalePagesRequest req = ScalePagesRequest.builder()
@@ -330,7 +330,7 @@ This endpoint rotates a given PDF file by a specified angle. The angle must be a
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.Angle;
 import org.openapis.openapi.models.components.RotatePDFRequest;
 import org.openapis.openapi.models.errors.*;
@@ -340,7 +340,7 @@ public class Application {
 
     public static void main(String[] args) throws RotatePDFBadRequestException, RotatePDFRequestEntityTooLargeException, RotatePDFUnprocessableEntityException, RotatePDFInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         RotatePDFRequest req = RotatePDFRequest.builder()
@@ -387,7 +387,7 @@ This endpoint removes specified pages from a given PDF file. Users can provide a
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFWithPageNums;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.DeletePagesResponse;
@@ -396,7 +396,7 @@ public class Application {
 
     public static void main(String[] args) throws DeletePagesBadRequestException, DeletePagesRequestEntityTooLargeException, DeletePagesUnprocessableEntityException, DeletePagesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFWithPageNums req = PDFWithPageNums.builder()
@@ -442,7 +442,7 @@ This endpoint remove images from file to reduce the file size.Input:PDF Output:P
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RemoveImagesResponse;
@@ -451,7 +451,7 @@ public class Application {
 
     public static void main(String[] args) throws RemoveImagesBadRequestException, RemoveImagesRequestEntityTooLargeException, RemoveImagesUnprocessableEntityException, RemoveImagesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -497,7 +497,7 @@ This endpoint rearranges pages in a given PDF file based on the specified page o
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.RearrangePagesRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RearrangePagesResponse;
@@ -506,7 +506,7 @@ public class Application {
 
     public static void main(String[] args) throws RearrangePagesBadRequestException, RearrangePagesRequestEntityTooLargeException, RearrangePagesUnprocessableEntityException, RearrangePagesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         RearrangePagesRequest req = RearrangePagesRequest.builder()
@@ -552,7 +552,7 @@ This endpoint converts a multi-page PDF document into a single paged PDF documen
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.PdfToSinglePageResponse;
@@ -561,7 +561,7 @@ public class Application {
 
     public static void main(String[] args) throws PdfToSinglePageBadRequestException, PdfToSinglePageRequestEntityTooLargeException, PdfToSinglePageUnprocessableEntityException, PdfToSinglePageInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -609,7 +609,7 @@ package hello.world;
 import java.io.FileInputStream;
 import java.lang.Exception;
 import java.util.List;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.*;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.OverlayPdfsResponse;
@@ -619,7 +619,7 @@ public class Application {
 
     public static void main(String[] args) throws OverlayPdfsBadRequestException, OverlayPdfsRequestEntityTooLargeException, OverlayPdfsUnprocessableEntityException, OverlayPdfsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         OverlayPdfsRequest req = OverlayPdfsRequest.builder()
@@ -672,7 +672,7 @@ This operation takes an input PDF file and the number of pages to merge into a s
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.MergeMultiplePagesRequest;
 import org.openapis.openapi.models.components.MergeMultiplePagesRequestPagesPerSheet;
 import org.openapis.openapi.models.errors.*;
@@ -682,7 +682,7 @@ public class Application {
 
     public static void main(String[] args) throws MergeMultiplePagesIntoOneBadRequestException, MergeMultiplePagesIntoOneRequestEntityTooLargeException, MergeMultiplePagesIntoOneUnprocessableEntityException, MergeMultiplePagesIntoOneInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         MergeMultiplePagesRequest req = MergeMultiplePagesRequest.builder()
@@ -729,7 +729,7 @@ This endpoint merges multiple PDF files into a single PDF file. The merged file 
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.MergePdfsResponse;
 
@@ -737,7 +737,7 @@ public class Application {
 
     public static void main(String[] args) throws MergePdfsBadRequestException, MergePdfsRequestEntityTooLargeException, MergePdfsUnprocessableEntityException, MergePdfsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         MergePdfsResponse res = sdk.general().mergePdfs()
@@ -778,7 +778,7 @@ Extracts bookmarks/table of contents from a PDF document as JSON.
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ExtractBookmarksResponse;
 
@@ -786,7 +786,7 @@ public class Application {
 
     public static void main(String[] args) throws ExtractBookmarksBadRequestException, ExtractBookmarksRequestEntityTooLargeException, ExtractBookmarksUnprocessableEntityException, ExtractBookmarksInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ExtractBookmarksResponse res = sdk.general().extractBookmarks()
@@ -827,7 +827,7 @@ Add or edit bookmarks/table of contents in a PDF document.
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.EditTableOfContentsRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.EditTableOfContentsResponse;
@@ -836,7 +836,7 @@ public class Application {
 
     public static void main(String[] args) throws EditTableOfContentsBadRequestException, EditTableOfContentsRequestEntityTooLargeException, EditTableOfContentsUnprocessableEntityException, EditTableOfContentsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         EditTableOfContentsRequest req = EditTableOfContentsRequest.builder()
@@ -884,7 +884,7 @@ This operation takes an input PDF file and crops it according to the given coord
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.CropPdfForm;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.CropPdfResponse;
@@ -893,7 +893,7 @@ public class Application {
 
     public static void main(String[] args) throws CropPdfBadRequestException, CropPdfRequestEntityTooLargeException, CropPdfUnprocessableEntityException, CropPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         CropPdfForm req = CropPdfForm.builder()
@@ -939,7 +939,7 @@ This operation combines page reordering for booklet printing with multi-page lay
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.BookletImpositionRequest;
 import org.openapis.openapi.models.components.BookletImpositionRequestPagesPerSheet;
 import org.openapis.openapi.models.errors.*;
@@ -949,7 +949,7 @@ public class Application {
 
     public static void main(String[] args) throws CreateBookletImpositionBadRequestException, CreateBookletImpositionRequestEntityTooLargeException, CreateBookletImpositionUnprocessableEntityException, CreateBookletImpositionInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         BookletImpositionRequest req = BookletImpositionRequest.builder()

@@ -1,13 +1,14 @@
 lockVersion: 2.0.0
 id: c2b39511-97e7-41a6-9449-77bdf06d84dc
 management:
-  docChecksum: c365ce7d7c0c53f90d811c17f20110ff
-  docVersion: 1.0.0
-  speakeasyVersion: 1.621.0
-  generationVersion: 2.707.0
-  releaseVersion: 0.2.2
-  configChecksum: 4345d0ba1631a628f0f3d75ea775a8c7
+  docChecksum: 3ed3c657a5acf34264852c8516d524f1
+  docVersion: 1.0.1
+  speakeasyVersion: 1.621.1
+  generationVersion: 2.708.2
+  releaseVersion: 0.2.3
+  configChecksum: 1792be0a65dada7675626ba6c2a93cb7
   repoURL: https://github.com/Stirling-Tools/stirling-pdf-java.git
+  published: true
 features:
   java:
     acceptHeaders: 2.81.2
@@ -548,7 +549,7 @@ generatedFiles:
   - docs/sdks/misc/README.md
   - docs/sdks/pipeline/README.md
   - docs/sdks/security/README.md
-  - docs/sdks/stirlingpdf/README.md
+  - docs/sdks/stirling/README.md
   - docs/utils/Blob.md
   - gradle.properties
   - gradle/wrapper/gradle-wrapper.jar
@@ -572,7 +573,7 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/AsyncMisc.java
   - src/main/java/org/openapis/openapi/AsyncPipeline.java
   - src/main/java/org/openapis/openapi/AsyncSecurity.java
-  - src/main/java/org/openapis/openapi/AsyncStirlingPdf.java
+  - src/main/java/org/openapis/openapi/AsyncStirling.java
   - src/main/java/org/openapis/openapi/Convert.java
   - src/main/java/org/openapis/openapi/Filter.java
   - src/main/java/org/openapis/openapi/General.java
@@ -581,7 +582,7 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/SDKConfiguration.java
   - src/main/java/org/openapis/openapi/Security.java
   - src/main/java/org/openapis/openapi/SecuritySource.java
-  - src/main/java/org/openapis/openapi/StirlingPdf.java
+  - src/main/java/org/openapis/openapi/Stirling.java
   - src/main/java/org/openapis/openapi/models/components/AddAttachmentRequest.java
   - src/main/java/org/openapis/openapi/models/components/AddAttachmentRequestFileInput.java
   - src/main/java/org/openapis/openapi/models/components/AddPageNumbersRequest.java

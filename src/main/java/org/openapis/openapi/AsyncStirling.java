@@ -8,7 +8,7 @@ import org.openapis.openapi.utils.Headers;
 /**
  * Stirling PDF - Processing API: API documentation for PDF processing operations including conversion, manipulation, security, and utilities.
  */
-public class AsyncStirlingPdf {
+public class AsyncStirling {
     private static final Headers _headers = Headers.EMPTY;
     /**
      * Document security and protection services for confidential and sensitive content.
@@ -340,9 +340,9 @@ public class AsyncStirlingPdf {
     }
 
     private SDKConfiguration sdkConfiguration;
-    private final StirlingPdf syncSDK;
+    private final Stirling syncSDK;
 
-    AsyncStirlingPdf(StirlingPdf syncSDK, SDKConfiguration sdkConfiguration) {
+    AsyncStirling(Stirling syncSDK, SDKConfiguration sdkConfiguration) {
         this.syncSDK = syncSDK;
         this.sdkConfiguration = sdkConfiguration;
         this.security = new AsyncSecurity(syncSDK.security(), sdkConfiguration);
@@ -359,7 +359,7 @@ public class AsyncStirlingPdf {
      * 
      * @return The sync SDK
      */
-    public StirlingPdf sync() {
+    public Stirling sync() {
         return syncSDK;
     }
 }

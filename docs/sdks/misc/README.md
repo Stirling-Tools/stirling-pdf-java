@@ -58,7 +58,7 @@ This endpoint allows you to update the metadata of a given PDF file. You can add
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.MetadataRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.MetadataResponse;
@@ -67,7 +67,7 @@ public class Application {
 
     public static void main(String[] args) throws MetadataBadRequestException, MetadataRequestEntityTooLargeException, MetadataUnprocessableEntityException, MetadataInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         MetadataRequest req = MetadataRequest.builder()
@@ -113,7 +113,7 @@ Removing read-only property from form fields making them fillableInput:PDF, Outp
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.UnlockPDFFormsResponse;
@@ -122,7 +122,7 @@ public class Application {
 
     public static void main(String[] args) throws UnlockPDFFormsBadRequestException, UnlockPDFFormsRequestEntityTooLargeException, UnlockPDFFormsUnprocessableEntityException, UnlockPDFFormsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -168,7 +168,7 @@ desc. Input:PDF Output:JS Type:SISO
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ExtractHeaderResponse;
@@ -177,7 +177,7 @@ public class Application {
 
     public static void main(String[] args) throws ExtractHeaderBadRequestException, ExtractHeaderRequestEntityTooLargeException, ExtractHeaderUnprocessableEntityException, ExtractHeaderInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -224,7 +224,7 @@ package hello.world;
 
 import java.io.FileInputStream;
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.*;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ScannerEffectResponse;
@@ -234,7 +234,7 @@ public class Application {
 
     public static void main(String[] args) throws ScannerEffectBadRequestException, ScannerEffectRequestEntityTooLargeException, ScannerEffectUnprocessableEntityException, ScannerEffectInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ScannerEffectRequest req = ScannerEffectRequest.builder()
@@ -296,7 +296,7 @@ This endpoint accepts a PDF file and option of invert all colors or replace text
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.ReplaceAndInvertColorRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ReplaceAndInvertColorResponse;
@@ -305,7 +305,7 @@ public class Application {
 
     public static void main(String[] args) throws ReplaceAndInvertColorBadRequestException, ReplaceAndInvertColorRequestEntityTooLargeException, ReplaceAndInvertColorUnprocessableEntityException, ReplaceAndInvertColorInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ReplaceAndInvertColorRequest req = ReplaceAndInvertColorRequest.builder()
@@ -351,7 +351,7 @@ This endpoint repairs a given PDF file by running Ghostscript (primary), qpdf (f
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RepairPdfResponse;
@@ -360,7 +360,7 @@ public class Application {
 
     public static void main(String[] args) throws RepairPdfBadRequestException, RepairPdfRequestEntityTooLargeException, RepairPdfUnprocessableEntityException, RepairPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -406,7 +406,7 @@ This endpoint removes blank pages from a given PDF file. Users can specify the t
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.RemoveBlankPagesRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.RemoveBlankPagesResponse;
@@ -415,7 +415,7 @@ public class Application {
 
     public static void main(String[] args) throws RemoveBlankPagesBadRequestException, RemoveBlankPagesRequestEntityTooLargeException, RemoveBlankPagesUnprocessableEntityException, RemoveBlankPagesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         RemoveBlankPagesRequest req = RemoveBlankPagesRequest.builder()
@@ -462,7 +462,7 @@ package hello.world;
 
 import java.lang.Exception;
 import java.util.List;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.OcrType;
 import org.openapis.openapi.models.components.ProcessPdfWithOcrRequest;
 import org.openapis.openapi.models.errors.*;
@@ -472,7 +472,7 @@ public class Application {
 
     public static void main(String[] args) throws ProcessPdfWithOCRBadRequestException, ProcessPdfWithOCRRequestEntityTooLargeException, ProcessPdfWithOCRUnprocessableEntityException, ProcessPdfWithOCRInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ProcessPdfWithOcrRequest req = ProcessPdfWithOcrRequest.builder()
@@ -522,7 +522,7 @@ Flattening just PDF form fields or converting each page to images to make text u
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.FlattenRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.FlattenResponse;
@@ -531,7 +531,7 @@ public class Application {
 
     public static void main(String[] args) throws FlattenBadRequestException, FlattenRequestEntityTooLargeException, FlattenUnprocessableEntityException, FlattenInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         FlattenRequest req = FlattenRequest.builder()
@@ -577,7 +577,7 @@ This endpoint extracts images from a given PDF file and returns them in a zip fi
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFExtractImagesRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ExtractImagesResponse;
@@ -586,7 +586,7 @@ public class Application {
 
     public static void main(String[] args) throws ExtractImagesBadRequestException, ExtractImagesRequestEntityTooLargeException, ExtractImagesUnprocessableEntityException, ExtractImagesInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFExtractImagesRequest req = PDFExtractImagesRequest.builder()
@@ -632,7 +632,7 @@ This endpoint extracts image scans from a given file based on certain parameters
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ExtractImageScansResponse;
 
@@ -640,7 +640,7 @@ public class Application {
 
     public static void main(String[] args) throws ExtractImageScansBadRequestException, ExtractImageScansRequestEntityTooLargeException, ExtractImageScansUnprocessableEntityException, ExtractImageScansInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ExtractImageScansResponse res = sdk.misc().extractImageScans()
@@ -681,7 +681,7 @@ Fully decompresses all PDF streams including text content
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.PDFFile;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.DecompressPdfResponse;
@@ -690,7 +690,7 @@ public class Application {
 
     public static void main(String[] args) throws DecompressPdfBadRequestException, DecompressPdfRequestEntityTooLargeException, DecompressPdfUnprocessableEntityException, DecompressPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         PDFFile req = PDFFile.builder()
@@ -736,7 +736,7 @@ This endpoint accepts a PDF file and optimizes it based on the provided paramete
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.OptimizeLevel;
 import org.openapis.openapi.models.components.OptimizePdfRequest;
 import org.openapis.openapi.models.errors.*;
@@ -746,7 +746,7 @@ public class Application {
 
     public static void main(String[] args) throws OptimizePdfBadRequestException, OptimizePdfRequestEntityTooLargeException, OptimizePdfUnprocessableEntityException, OptimizePdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         OptimizePdfRequest req = OptimizePdfRequest.builder()
@@ -793,7 +793,7 @@ This endpoint accepts a PDF file, scans each page for a specific QR code, and sp
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.AutoSplitPdfRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.AutoSplitPdfResponse;
@@ -802,7 +802,7 @@ public class Application {
 
     public static void main(String[] args) throws AutoSplitPdfBadRequestException, AutoSplitPdfRequestEntityTooLargeException, AutoSplitPdfUnprocessableEntityException, AutoSplitPdfInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         AutoSplitPdfRequest req = AutoSplitPdfRequest.builder()
@@ -848,7 +848,7 @@ This endpoint accepts a PDF file and attempts to extract its title or header bas
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.ExtractHeaderRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.ExtractHeader1Response;
@@ -857,7 +857,7 @@ public class Application {
 
     public static void main(String[] args) throws ExtractHeader1BadRequestException, ExtractHeader1RequestEntityTooLargeException, ExtractHeader1UnprocessableEntityException, ExtractHeader1InternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         ExtractHeaderRequest req = ExtractHeaderRequest.builder()
@@ -903,7 +903,7 @@ This endpoint adds a stamp to a given PDF file. Users can specify the stamp type
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.*;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.AddStampResponse;
@@ -912,7 +912,7 @@ public class Application {
 
     public static void main(String[] args) throws AddStampBadRequestException, AddStampRequestEntityTooLargeException, AddStampUnprocessableEntityException, AddStampInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         AddStampRequest req = AddStampRequest.builder()
@@ -960,7 +960,7 @@ This operation takes an input PDF file and adds page numbers to it. Input:PDF Ou
 package hello.world;
 
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.*;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.AddPageNumbersResponse;
@@ -969,7 +969,7 @@ public class Application {
 
     public static void main(String[] args) throws AddPageNumbersBadRequestException, AddPageNumbersRequestEntityTooLargeException, AddPageNumbersUnprocessableEntityException, AddPageNumbersInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         AddPageNumbersRequest req = AddPageNumbersRequest.builder()
@@ -1019,7 +1019,7 @@ package hello.world;
 
 import java.io.FileInputStream;
 import java.lang.Exception;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.ImageFile;
 import org.openapis.openapi.models.components.OverlayImageRequest;
 import org.openapis.openapi.models.errors.*;
@@ -1030,7 +1030,7 @@ public class Application {
 
     public static void main(String[] args) throws OverlayImageBadRequestException, OverlayImageRequestEntityTooLargeException, OverlayImageUnprocessableEntityException, OverlayImageInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         OverlayImageRequest req = OverlayImageRequest.builder()
@@ -1081,7 +1081,7 @@ package hello.world;
 
 import java.lang.Exception;
 import java.util.List;
-import org.openapis.openapi.StirlingPdf;
+import org.openapis.openapi.Stirling;
 import org.openapis.openapi.models.components.AddAttachmentRequest;
 import org.openapis.openapi.models.errors.*;
 import org.openapis.openapi.models.operations.AddAttachmentsResponse;
@@ -1090,7 +1090,7 @@ public class Application {
 
     public static void main(String[] args) throws AddAttachmentsBadRequestException, AddAttachmentsRequestEntityTooLargeException, AddAttachmentsUnprocessableEntityException, AddAttachmentsInternalServerError, Exception {
 
-        StirlingPdf sdk = StirlingPdf.builder()
+        Stirling sdk = Stirling.builder()
             .build();
 
         AddAttachmentRequest req = AddAttachmentRequest.builder()
