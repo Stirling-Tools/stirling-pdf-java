@@ -2,20 +2,20 @@ speakeasyVersion: 1.621.0
 sources:
     Stirling PDF - Processing API:
         sourceNamespace: stirling-pdf---processing-api
-        sourceRevisionDigest: sha256:2814ee4299182c037ec37c8f9f48de30e4e4abde936b254030008d6c3b0a3a62
+        sourceRevisionDigest: sha256:005edac2582acba32672ceffb033fb8898e3d2300cee2ef5fbd81d718a0f7ffc
         sourceBlobDigest: sha256:4b7a6d6821424a998f4fe122a745e44bd259f702970df9bafbe33bd9cf62f956
         tags:
             - latest
-            - speakeasy-sdk-regen-1758284808
+            - speakeasy-sdk-regen-1758286416
             - 1.0.0
 targets:
     stirling-pdf:
         source: Stirling PDF - Processing API
         sourceNamespace: stirling-pdf---processing-api
-        sourceRevisionDigest: sha256:2814ee4299182c037ec37c8f9f48de30e4e4abde936b254030008d6c3b0a3a62
+        sourceRevisionDigest: sha256:005edac2582acba32672ceffb033fb8898e3d2300cee2ef5fbd81d718a0f7ffc
         sourceBlobDigest: sha256:4b7a6d6821424a998f4fe122a745e44bd259f702970df9bafbe33bd9cf62f956
         codeSamplesNamespace: stirling-pdf---processing-api-java-code-samples
-        codeSamplesRevisionDigest: sha256:973995fe2cf6ad128fa3b8df9bf1f947a17ffdbb2b82b113ef41e3b7f274af72
+        codeSamplesRevisionDigest: sha256:68e06233be4e69a2916a442e47af5fed2abaaf685063d0f8749f65c432757777
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
