@@ -67,7 +67,26 @@ import org.openapis.openapi.operations.UrlToPdf;
 import org.openapis.openapi.utils.Headers;
 
 /**
- * Convert APIs
+ * Document format transformation services for cross-platform compatibility and workflow integration.
+ * 
+ * <p>This endpoint group enables transformation between various formats, supporting
+ * diverse business workflows and system integrations for mixed document ecosystems.
+ * 
+ * <p>Common use cases:
+ * • Legacy system integration, document migration, and cross-platform sharing
+ * • Archive standardization, publishing preparation, and content adaptation
+ * • Accessibility compliance and mobile-friendly document preparation
+ * 
+ * <p>Business applications:
+ * • Enterprise content management, digital publishing, and educational platforms
+ * • Legal document processing, healthcare interoperability, and government standardization
+ * 
+ * <p>Integration scenarios:
+ * • API-driven pipelines, automated workflow preparation, and batch conversions
+ * • Real-time format adaptation for user requests
+ * 
+ * <p>Target users: System integrators, content managers, digital archivists, and
+ * organizations requiring flexible document format interoperability.
  */
 public class AsyncConvert {
     private static final Headers _headers = Headers.EMPTY;

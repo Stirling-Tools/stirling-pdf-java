@@ -147,7 +147,26 @@ public class StirlingPdf {
     private final Filter filter;
 
     /**
-     * Convert APIs
+     * Document format transformation services for cross-platform compatibility and workflow integration.
+     * 
+     * <p>This endpoint group enables transformation between various formats, supporting
+     * diverse business workflows and system integrations for mixed document ecosystems.
+     * 
+     * <p>Common use cases:
+     * • Legacy system integration, document migration, and cross-platform sharing
+     * • Archive standardization, publishing preparation, and content adaptation
+     * • Accessibility compliance and mobile-friendly document preparation
+     * 
+     * <p>Business applications:
+     * • Enterprise content management, digital publishing, and educational platforms
+     * • Legal document processing, healthcare interoperability, and government standardization
+     * 
+     * <p>Integration scenarios:
+     * • API-driven pipelines, automated workflow preparation, and batch conversions
+     * • Real-time format adaptation for user requests
+     * 
+     * <p>Target users: System integrators, content managers, digital archivists, and
+     * organizations requiring flexible document format interoperability.
      */
     private final Convert convert;
 
@@ -174,11 +193,6 @@ public class StirlingPdf {
      * professionals requiring detailed document insights.
      */
     private final Analysis analysis;
-
-    /**
-     * APIs for React UI data (Proprietary features)
-     */
-    private final ProprietaryUIData proprietaryUIData;
 
     /**
      * Document security and protection services for confidential and sensitive content.
@@ -307,7 +321,26 @@ public class StirlingPdf {
     }
 
     /**
-     * Convert APIs
+     * Document format transformation services for cross-platform compatibility and workflow integration.
+     * 
+     * <p>This endpoint group enables transformation between various formats, supporting
+     * diverse business workflows and system integrations for mixed document ecosystems.
+     * 
+     * <p>Common use cases:
+     * • Legacy system integration, document migration, and cross-platform sharing
+     * • Archive standardization, publishing preparation, and content adaptation
+     * • Accessibility compliance and mobile-friendly document preparation
+     * 
+     * <p>Business applications:
+     * • Enterprise content management, digital publishing, and educational platforms
+     * • Legal document processing, healthcare interoperability, and government standardization
+     * 
+     * <p>Integration scenarios:
+     * • API-driven pipelines, automated workflow preparation, and batch conversions
+     * • Real-time format adaptation for user requests
+     * 
+     * <p>Target users: System integrators, content managers, digital archivists, and
+     * organizations requiring flexible document format interoperability.
      */
     public Convert convert() {
         return convert;
@@ -337,13 +370,6 @@ public class StirlingPdf {
      */
     public Analysis analysis() {
         return analysis;
-    }
-
-    /**
-     * APIs for React UI data (Proprietary features)
-     */
-    public ProprietaryUIData proprietaryUIData() {
-        return proprietaryUIData;
     }
 
     private SDKConfiguration sdkConfiguration;
@@ -481,7 +507,6 @@ public class StirlingPdf {
         this.filter = new Filter(sdkConfiguration);
         this.convert = new Convert(sdkConfiguration);
         this.analysis = new Analysis(sdkConfiguration);
-        this.proprietaryUIData = new ProprietaryUIData(sdkConfiguration);
         this.sdkConfiguration = this.sdkConfiguration.hooks().sdkInit(this.sdkConfiguration);
         this.asyncSDK = new AsyncStirlingPdf(this, sdkConfiguration);
     }

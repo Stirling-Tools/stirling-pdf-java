@@ -3,7 +3,6 @@ speakeasyVersion: latest
 sources:
     Stirling PDF - Processing API:
         inputs:
-            - location: https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/refs/heads/testDElteme/pdftools.yml
             - location: api.yml
         output: .speakeasy/out.openapi.yaml
         registry:

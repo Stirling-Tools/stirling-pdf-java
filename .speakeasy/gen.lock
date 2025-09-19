@@ -1,13 +1,12 @@
 lockVersion: 2.0.0
 id: c2b39511-97e7-41a6-9449-77bdf06d84dc
 management:
-  docChecksum: b3b04a5741a5123f6b095903c4203e42
+  docChecksum: c365ce7d7c0c53f90d811c17f20110ff
   docVersion: 1.0.0
   speakeasyVersion: 1.621.0
   generationVersion: 2.707.0
-  releaseVersion: 0.1.1
-  configChecksum: b4dbc1d8097ecb47218e7f50dd3d3146
-  repoURL: https://github.com/Stirling-Tools/stirling-pdf-java.git
+  releaseVersion: 0.2.0
+  configChecksum: 8d35692065089b68e8d59d8b6791ef7f
 features:
   java:
     acceptHeaders: 2.81.2
@@ -15,7 +14,6 @@ features:
     constsAndDefaults: 0.1.1
     core: 3.50.0
     downloadStreams: 0.1.1
-    flattening: 2.81.1
     globalSecurityCallbacks: 0.1.0
     globalServerURLs: 2.82.2
     sdkHooks: 1.1.0
@@ -24,7 +22,6 @@ generatedFiles:
   - .gitattributes
   - USAGE.md
   - build.gradle
-  - docs/models/components/AccountData.md
   - docs/models/components/AddAttachmentRequest.md
   - docs/models/components/AddAttachmentRequestFileInput.md
   - docs/models/components/AddPageNumbersRequest.md
@@ -41,13 +38,8 @@ generatedFiles:
   - docs/models/components/AddWatermarkRequest.md
   - docs/models/components/AddWatermarkRequestAlphabet.md
   - docs/models/components/AddWatermarkRequestFileInput.md
-  - docs/models/components/AdminSettingsData.md
   - docs/models/components/Angle.md
   - docs/models/components/Attachment.md
-  - docs/models/components/AuditDashboardData.md
-  - docs/models/components/AuditEventType.md
-  - docs/models/components/AuditLevel.md
-  - docs/models/components/Authority.md
   - docs/models/components/AutoSplitPdfRequest.md
   - docs/models/components/AutoSplitPdfRequestFileInput.md
   - docs/models/components/BookletImpositionRequest.md
@@ -67,7 +59,6 @@ generatedFiles:
   - docs/models/components/CropPdfForm.md
   - docs/models/components/CropPdfFormFileInput.md
   - docs/models/components/CustomMode.md
-  - docs/models/components/DatabaseData.md
   - docs/models/components/EditTableOfContentsRequest.md
   - docs/models/components/EditTableOfContentsRequestFileInput.md
   - docs/models/components/EmlToPdfRequest.md
@@ -76,12 +67,9 @@ generatedFiles:
   - docs/models/components/ExtractHeaderRequestFileInput.md
   - docs/models/components/ExtractImageScansRequest.md
   - docs/models/components/ExtractImageScansRequestFileInput.md
-  - docs/models/components/FileInfo.md
-  - docs/models/components/FilePathAsPath.md
   - docs/models/components/FileSizeRequest.md
   - docs/models/components/FileSizeRequestComparator.md
   - docs/models/components/FileSizeRequestFileInput.md
-  - docs/models/components/FileSystem.md
   - docs/models/components/FitOption.md
   - docs/models/components/FlattenRequest.md
   - docs/models/components/FlattenRequestFileInput.md
@@ -98,7 +86,6 @@ generatedFiles:
   - docs/models/components/ImageFormat.md
   - docs/models/components/JksFile.md
   - docs/models/components/KeyLength.md
-  - docs/models/components/LoginData.md
   - docs/models/components/ManualRedactPdfRequest.md
   - docs/models/components/ManualRedactPdfRequestFileInput.md
   - docs/models/components/MergeMultiplePagesRequest.md
@@ -191,13 +178,8 @@ generatedFiles:
   - docs/models/components/StampImage.md
   - docs/models/components/StampType.md
   - docs/models/components/StandardPageSize.md
-  - docs/models/components/Team.md
-  - docs/models/components/TeamDetailsData.md
-  - docs/models/components/TeamWithUserCountDTO.md
-  - docs/models/components/TeamsData.md
   - docs/models/components/Trapped.md
   - docs/models/components/UrlToPdfRequest.md
-  - docs/models/components/User.md
   - docs/models/components/WatermarkImage.md
   - docs/models/components/WatermarkType.md
   - docs/models/errors/AddAttachmentsBadRequestException.md
@@ -496,21 +478,16 @@ generatedFiles:
   - docs/models/operations/File.md
   - docs/models/operations/FileSizeResponse.md
   - docs/models/operations/FlattenResponse.md
-  - docs/models/operations/GetAccountDataResponse.md
-  - docs/models/operations/GetAdminSettingsDataResponse.md
   - docs/models/operations/GetAnnotationInfoResponse.md
   - docs/models/operations/GetAnnotationInfoResponseBody.md
-  - docs/models/operations/GetAuditDashboardDataResponse.md
   - docs/models/operations/GetBasicInfoResponse.md
   - docs/models/operations/GetBasicInfoResponseBody.md
-  - docs/models/operations/GetDatabaseDataResponse.md
   - docs/models/operations/GetDocumentPropertiesResponse.md
   - docs/models/operations/GetDocumentPropertiesResponseBody.md
   - docs/models/operations/GetFontInfoResponse.md
   - docs/models/operations/GetFontInfoResponseBody.md
   - docs/models/operations/GetFormFieldsResponse.md
   - docs/models/operations/GetFormFieldsResponseBody.md
-  - docs/models/operations/GetLoginDataResponse.md
   - docs/models/operations/GetPageCountResponse.md
   - docs/models/operations/GetPageCountResponseBody.md
   - docs/models/operations/GetPageDimensionsResponse.md
@@ -519,9 +496,6 @@ generatedFiles:
   - docs/models/operations/GetPdfInfoResponseBody.md
   - docs/models/operations/GetSecurityInfoResponse.md
   - docs/models/operations/GetSecurityInfoResponseBody.md
-  - docs/models/operations/GetTeamDetailsDataRequest.md
-  - docs/models/operations/GetTeamDetailsDataResponse.md
-  - docs/models/operations/GetTeamsDataResponse.md
   - docs/models/operations/HandleDataResponse.md
   - docs/models/operations/HtmlToPdfResponse.md
   - docs/models/operations/MarkdownToPdfResponse.md
@@ -572,7 +546,6 @@ generatedFiles:
   - docs/sdks/general/README.md
   - docs/sdks/misc/README.md
   - docs/sdks/pipeline/README.md
-  - docs/sdks/proprietaryuidata/README.md
   - docs/sdks/security/README.md
   - docs/sdks/stirlingpdf/README.md
   - docs/utils/Blob.md
@@ -597,7 +570,6 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/AsyncGeneral.java
   - src/main/java/org/openapis/openapi/AsyncMisc.java
   - src/main/java/org/openapis/openapi/AsyncPipeline.java
-  - src/main/java/org/openapis/openapi/AsyncProprietaryUIData.java
   - src/main/java/org/openapis/openapi/AsyncSecurity.java
   - src/main/java/org/openapis/openapi/AsyncStirlingPdf.java
   - src/main/java/org/openapis/openapi/Convert.java
@@ -605,12 +577,10 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/General.java
   - src/main/java/org/openapis/openapi/Misc.java
   - src/main/java/org/openapis/openapi/Pipeline.java
-  - src/main/java/org/openapis/openapi/ProprietaryUIData.java
   - src/main/java/org/openapis/openapi/SDKConfiguration.java
   - src/main/java/org/openapis/openapi/Security.java
   - src/main/java/org/openapis/openapi/SecuritySource.java
   - src/main/java/org/openapis/openapi/StirlingPdf.java
-  - src/main/java/org/openapis/openapi/models/components/AccountData.java
   - src/main/java/org/openapis/openapi/models/components/AddAttachmentRequest.java
   - src/main/java/org/openapis/openapi/models/components/AddAttachmentRequestFileInput.java
   - src/main/java/org/openapis/openapi/models/components/AddPageNumbersRequest.java
@@ -627,13 +597,8 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/components/AddWatermarkRequest.java
   - src/main/java/org/openapis/openapi/models/components/AddWatermarkRequestAlphabet.java
   - src/main/java/org/openapis/openapi/models/components/AddWatermarkRequestFileInput.java
-  - src/main/java/org/openapis/openapi/models/components/AdminSettingsData.java
   - src/main/java/org/openapis/openapi/models/components/Angle.java
   - src/main/java/org/openapis/openapi/models/components/Attachment.java
-  - src/main/java/org/openapis/openapi/models/components/AuditDashboardData.java
-  - src/main/java/org/openapis/openapi/models/components/AuditEventType.java
-  - src/main/java/org/openapis/openapi/models/components/AuditLevel.java
-  - src/main/java/org/openapis/openapi/models/components/Authority.java
   - src/main/java/org/openapis/openapi/models/components/AutoSplitPdfRequest.java
   - src/main/java/org/openapis/openapi/models/components/AutoSplitPdfRequestFileInput.java
   - src/main/java/org/openapis/openapi/models/components/BookletImpositionRequest.java
@@ -653,7 +618,6 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/components/CropPdfForm.java
   - src/main/java/org/openapis/openapi/models/components/CropPdfFormFileInput.java
   - src/main/java/org/openapis/openapi/models/components/CustomMode.java
-  - src/main/java/org/openapis/openapi/models/components/DatabaseData.java
   - src/main/java/org/openapis/openapi/models/components/EditTableOfContentsRequest.java
   - src/main/java/org/openapis/openapi/models/components/EditTableOfContentsRequestFileInput.java
   - src/main/java/org/openapis/openapi/models/components/EmlToPdfRequest.java
@@ -662,12 +626,9 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/components/ExtractHeaderRequestFileInput.java
   - src/main/java/org/openapis/openapi/models/components/ExtractImageScansRequest.java
   - src/main/java/org/openapis/openapi/models/components/ExtractImageScansRequestFileInput.java
-  - src/main/java/org/openapis/openapi/models/components/FileInfo.java
-  - src/main/java/org/openapis/openapi/models/components/FilePathAsPath.java
   - src/main/java/org/openapis/openapi/models/components/FileSizeRequest.java
   - src/main/java/org/openapis/openapi/models/components/FileSizeRequestComparator.java
   - src/main/java/org/openapis/openapi/models/components/FileSizeRequestFileInput.java
-  - src/main/java/org/openapis/openapi/models/components/FileSystem.java
   - src/main/java/org/openapis/openapi/models/components/FitOption.java
   - src/main/java/org/openapis/openapi/models/components/FlattenRequest.java
   - src/main/java/org/openapis/openapi/models/components/FlattenRequestFileInput.java
@@ -684,7 +645,6 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/components/ImageFormat.java
   - src/main/java/org/openapis/openapi/models/components/JksFile.java
   - src/main/java/org/openapis/openapi/models/components/KeyLength.java
-  - src/main/java/org/openapis/openapi/models/components/LoginData.java
   - src/main/java/org/openapis/openapi/models/components/ManualRedactPdfRequest.java
   - src/main/java/org/openapis/openapi/models/components/ManualRedactPdfRequestFileInput.java
   - src/main/java/org/openapis/openapi/models/components/MergeMultiplePagesRequest.java
@@ -778,13 +738,8 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/components/StampImage.java
   - src/main/java/org/openapis/openapi/models/components/StampType.java
   - src/main/java/org/openapis/openapi/models/components/StandardPageSize.java
-  - src/main/java/org/openapis/openapi/models/components/Team.java
-  - src/main/java/org/openapis/openapi/models/components/TeamDetailsData.java
-  - src/main/java/org/openapis/openapi/models/components/TeamWithUserCountDTO.java
-  - src/main/java/org/openapis/openapi/models/components/TeamsData.java
   - src/main/java/org/openapis/openapi/models/components/Trapped.java
   - src/main/java/org/openapis/openapi/models/components/UrlToPdfRequest.java
-  - src/main/java/org/openapis/openapi/models/components/User.java
   - src/main/java/org/openapis/openapi/models/components/WatermarkImage.java
   - src/main/java/org/openapis/openapi/models/components/WatermarkType.java
   - src/main/java/org/openapis/openapi/models/errors/APIException.java
@@ -1352,22 +1307,15 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/operations//async/ExtractImagesRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/FileSizeRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/FlattenRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetAccountDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetAdminSettingsDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetAnnotationInfoRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetAuditDashboardDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetBasicInfoRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetDatabaseDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetDocumentPropertiesRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetFontInfoRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetFormFieldsRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetLoginDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetPageCountRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetPageDimensionsRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetPdfInfoRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/GetSecurityInfoRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetTeamDetailsDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations//async/GetTeamsDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/HandleDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/HtmlToPdfRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations//async/MarkdownToPdfRequestBuilder.java
@@ -1462,20 +1410,12 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/operations/FileSizeResponse.java
   - src/main/java/org/openapis/openapi/models/operations/FlattenRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/FlattenResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/GetAccountDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetAccountDataResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/GetAdminSettingsDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetAdminSettingsDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetAnnotationInfoRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/GetAnnotationInfoResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetAnnotationInfoResponseBody.java
-  - src/main/java/org/openapis/openapi/models/operations/GetAuditDashboardDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetAuditDashboardDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetBasicInfoRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/GetBasicInfoResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetBasicInfoResponseBody.java
-  - src/main/java/org/openapis/openapi/models/operations/GetDatabaseDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetDatabaseDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetDocumentPropertiesRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/GetDocumentPropertiesResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetDocumentPropertiesResponseBody.java
@@ -1485,8 +1425,6 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/operations/GetFormFieldsRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/GetFormFieldsResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetFormFieldsResponseBody.java
-  - src/main/java/org/openapis/openapi/models/operations/GetLoginDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetLoginDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetPageCountRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/GetPageCountResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetPageCountResponseBody.java
@@ -1499,11 +1437,6 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/operations/GetSecurityInfoRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/GetSecurityInfoResponse.java
   - src/main/java/org/openapis/openapi/models/operations/GetSecurityInfoResponseBody.java
-  - src/main/java/org/openapis/openapi/models/operations/GetTeamDetailsDataRequest.java
-  - src/main/java/org/openapis/openapi/models/operations/GetTeamDetailsDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetTeamDetailsDataResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/GetTeamsDataRequestBuilder.java
-  - src/main/java/org/openapis/openapi/models/operations/GetTeamsDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/HandleDataRequestBuilder.java
   - src/main/java/org/openapis/openapi/models/operations/HandleDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/HtmlToPdfRequestBuilder.java
@@ -1615,22 +1548,15 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/models/operations/async/ExtractImagesResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/FileSizeResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/FlattenResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetAccountDataResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetAdminSettingsDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetAnnotationInfoResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetAuditDashboardDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetBasicInfoResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetDatabaseDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetDocumentPropertiesResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetFontInfoResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetFormFieldsResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetLoginDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetPageCountResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetPageDimensionsResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetPdfInfoResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/GetSecurityInfoResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetTeamDetailsDataResponse.java
-  - src/main/java/org/openapis/openapi/models/operations/async/GetTeamsDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/HandleDataResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/HtmlToPdfResponse.java
   - src/main/java/org/openapis/openapi/models/operations/async/MarkdownToPdfResponse.java
@@ -1698,22 +1624,15 @@ generatedFiles:
   - src/main/java/org/openapis/openapi/operations/ExtractImages.java
   - src/main/java/org/openapis/openapi/operations/FileSize.java
   - src/main/java/org/openapis/openapi/operations/Flatten.java
-  - src/main/java/org/openapis/openapi/operations/GetAccountData.java
-  - src/main/java/org/openapis/openapi/operations/GetAdminSettingsData.java
   - src/main/java/org/openapis/openapi/operations/GetAnnotationInfo.java
-  - src/main/java/org/openapis/openapi/operations/GetAuditDashboardData.java
   - src/main/java/org/openapis/openapi/operations/GetBasicInfo.java
-  - src/main/java/org/openapis/openapi/operations/GetDatabaseData.java
   - src/main/java/org/openapis/openapi/operations/GetDocumentProperties.java
   - src/main/java/org/openapis/openapi/operations/GetFontInfo.java
   - src/main/java/org/openapis/openapi/operations/GetFormFields.java
-  - src/main/java/org/openapis/openapi/operations/GetLoginData.java
   - src/main/java/org/openapis/openapi/operations/GetPageCount.java
   - src/main/java/org/openapis/openapi/operations/GetPageDimensions.java
   - src/main/java/org/openapis/openapi/operations/GetPdfInfo.java
   - src/main/java/org/openapis/openapi/operations/GetSecurityInfo.java
-  - src/main/java/org/openapis/openapi/operations/GetTeamDetailsData.java
-  - src/main/java/org/openapis/openapi/operations/GetTeamsData.java
   - src/main/java/org/openapis/openapi/operations/HandleData.java
   - src/main/java/org/openapis/openapi/operations/HtmlToPdf.java
   - src/main/java/org/openapis/openapi/operations/MarkdownToPdf.java

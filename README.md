@@ -48,7 +48,7 @@ The samples below show how a published SDK artifact is used:
 
 Gradle:
 ```groovy
-implementation 'org.stirling:openapi:0.1.1'
+implementation 'org.stirling:openapi:0.2.0'
 ```
 
 Maven:
@@ -56,7 +56,7 @@ Maven:
 <dependency>
     <groupId>org.stirling</groupId>
     <artifactId>openapi</artifactId>
-    <version>0.1.1</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -296,16 +296,6 @@ Async support is available for:
 ### [pipeline()](docs/sdks/pipeline/README.md)
 
 * [handleData](docs/sdks/pipeline/README.md#handledata) - Execute automated PDF processing pipeline
-
-### [proprietaryUIData()](docs/sdks/proprietaryuidata/README.md)
-
-* [getTeamsData](docs/sdks/proprietaryuidata/README.md#getteamsdata) - Get teams list data
-* [getTeamDetailsData](docs/sdks/proprietaryuidata/README.md#getteamdetailsdata) - Get team details data
-* [getLoginData](docs/sdks/proprietaryuidata/README.md#getlogindata) - Get login page data
-* [getDatabaseData](docs/sdks/proprietaryuidata/README.md#getdatabasedata) - Get database management data
-* [getAuditDashboardData](docs/sdks/proprietaryuidata/README.md#getauditdashboarddata) - Get audit dashboard data
-* [getAdminSettingsData](docs/sdks/proprietaryuidata/README.md#getadminsettingsdata) - Get admin settings data
-* [getAccountData](docs/sdks/proprietaryuidata/README.md#getaccountdata) - Get account page data
 
 ### [security()](docs/sdks/security/README.md)
 

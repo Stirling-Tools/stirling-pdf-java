@@ -307,8 +307,6 @@ tags:
       officers,
 
       government agencies, and enterprises handling sensitive content.
-  - name: Convert
-    description: Convert APIs
 paths:
   /api/v1/security/validate-signature:
     post:

@@ -270,17 +270,6 @@ public class OpenapiAutoConfig {
     public Analysis analysis(StirlingPdf stirlingPdf) {
         return stirlingPdf.analysis();
     }
-    /**
-     * Creates a ProprietaryUIData sub-SDK bean if none exists.
-     *
-     * @param stirlingPdf the main SDK instance
-     * @return A configured ProprietaryUIData instance
-     */
-    @Bean
-    @ConditionalOnMissingBean
-    public ProprietaryUIData proprietaryUIData(StirlingPdf stirlingPdf) {
-        return stirlingPdf.proprietaryUIData();
-    }
 
     /**
      * Creates the async SDK bean if none exists.
@@ -370,16 +359,5 @@ public class OpenapiAutoConfig {
     @ConditionalOnMissingBean
     public AsyncAnalysis asyncAnalysis(AsyncStirlingPdf asyncStirlingPdf) {
         return asyncStirlingPdf.analysis();
-    }
-    /**
-     * Creates an AsyncProprietaryUIData sub-SDK bean if none exists.
-     *
-     * @param asyncStirlingPdf the async SDK instance
-     * @return A configured AsyncProprietaryUIData instance
-     */
-    @Bean
-    @ConditionalOnMissingBean
-    public AsyncProprietaryUIData asyncProprietaryUIData(AsyncStirlingPdf asyncStirlingPdf) {
-        return asyncStirlingPdf.proprietaryUIData();
     }
 }
