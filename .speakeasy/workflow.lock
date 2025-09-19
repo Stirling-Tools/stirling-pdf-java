@@ -6,7 +6,7 @@ sources:
         sourceBlobDigest: sha256:4b7a6d6821424a998f4fe122a745e44bd259f702970df9bafbe33bd9cf62f956
         tags:
             - latest
-            - speakeasy-sdk-regen-1758286416
+            - speakeasy-sdk-regen-1758287404
             - 1.0.0
 targets:
     stirling-pdf:
@@ -15,7 +15,7 @@ targets:
         sourceRevisionDigest: sha256:005edac2582acba32672ceffb033fb8898e3d2300cee2ef5fbd81d718a0f7ffc
         sourceBlobDigest: sha256:4b7a6d6821424a998f4fe122a745e44bd259f702970df9bafbe33bd9cf62f956
         codeSamplesNamespace: stirling-pdf---processing-api-java-code-samples
-        codeSamplesRevisionDigest: sha256:68e06233be4e69a2916a442e47af5fed2abaaf685063d0f8749f65c432757777
+        codeSamplesRevisionDigest: sha256:8e16802f52c97cf99f3d606a7f37311aff3afa66249b4de1700cd2b1a9e43517
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
