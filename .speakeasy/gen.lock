@@ -5,8 +5,9 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 1.621.0
   generationVersion: 2.707.0
-  releaseVersion: 0.1.0
-  configChecksum: c4de54bd6dbcbb386ec42308e569bba4
+  releaseVersion: 0.1.1
+  configChecksum: b4dbc1d8097ecb47218e7f50dd3d3146
+  repoURL: https://github.com/Stirling-Tools/stirling-pdf-java.git
 features:
   java:
     acceptHeaders: 2.81.2
