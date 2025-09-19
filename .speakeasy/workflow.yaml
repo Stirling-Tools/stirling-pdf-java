@@ -1,0 +1,20 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Stirling PDF - Processing API:
+        inputs:
+            - location: https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/refs/heads/testDElteme/pdftools.yml
+            - location: api.yml
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/stirling-pdf/stirling/stirling-pdf---processing-api
+targets:
+    stirling-pdf:
+        target: java
+        source: Stirling PDF - Processing API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/stirling-pdf/stirling/stirling-pdf---processing-api-java-code-samples
+            labelOverride:
+                fixedValue: Java (SDK)
+            blocking: false
