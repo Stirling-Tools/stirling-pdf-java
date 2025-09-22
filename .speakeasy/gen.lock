@@ -3,10 +3,10 @@ id: c2b39511-97e7-41a6-9449-77bdf06d84dc
 management:
   docChecksum: 3ed3c657a5acf34264852c8516d524f1
   docVersion: 1.0.1
-  speakeasyVersion: 1.621.1
-  generationVersion: 2.708.2
-  releaseVersion: 0.2.3
-  configChecksum: 1792be0a65dada7675626ba6c2a93cb7
+  speakeasyVersion: 1.622.1
+  generationVersion: 2.709.0
+  releaseVersion: 0.2.4
+  configChecksum: 97ca5bf432768f608435a4edfa515552
   repoURL: https://github.com/Stirling-Tools/stirling-pdf-java.git
   published: true
 features:
