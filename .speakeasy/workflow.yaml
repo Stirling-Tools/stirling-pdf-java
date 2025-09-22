@@ -17,3 +17,9 @@ targets:
                 ossrhPassword: $ossrh_password
                 gpgSecretKey: $java_gpg_secret_key
                 gpgPassPhrase: $java_gpg_passphrase
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/stirling-pdf/stirling/stirling-pdf---processing-api-java-code-samples
+            labelOverride:
+                fixedValue: Java (SDK)
+            blocking: false

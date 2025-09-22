@@ -17,13 +17,14 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: true
     oAuth2PasswordEnabled: true
+    hoistGlobalSecurity: true
   sdkHooksConfigAccess: true
   tests:
     generateTests: false
     generateNewTests: true
     skipResponseBodyAssertions: false
 java:
-  version: 0.2.3
+  version: 0.2.4
   additionalDependencies: []
   additionalPlugins: []
   artifactID: openapi
